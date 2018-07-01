@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_prometna_nesreca"
+            android:text="@string/prometna_nesreca"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_koliko_vozila"
+            android:hint="@string/koliko_vozila"
+            android:inputType="number"
+            android:textSize="22sp"
+            android:layout_below="@id/checkbox_prometna_nesreca"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_prometna_nesreca_ozlijedeni"
+            android:text="@string/ozlijedeni"
+            android:textSize="22sp"
+            android:layout_below="@+id/edittext_koliko_vozila"
+            android:layout_alignLeft="@id/edittext_koliko_vozila"
+            android:layout_alignStart="@id/edittext_koliko_vozila"
+            android:enabled="false"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_koliko_ozlijedenih"
+            android:hint="@string/koliko_ozlijedenih"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignBaseline="@+id/checkbox_prometna_nesreca_ozlijedeni"
+            android:layout_toRightOf="@+id/checkbox_prometna_nesreca_ozlijedeni"
+            android:layout_toEndOf="@+id/checkbox_prometna_nesreca_ozlijedeni"
+            android:enabled="false"/>
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_below="@id/checkbox_prometna_nesreca_ozlijedeni"
+            android:layout_alignStart="@id/edittext_koliko_vozila"
+            android:layout_alignLeft="@id/edittext_koliko_vozila"
+            android:text="@string/zapaljenje"
+            android:textSize="22sp"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_pozar"
+            android:text="@string/pozar"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_pozar_objekta"
+            android:text="@string/pozar_objekta"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_pozar"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_pozar_otvorenog_prostora"
+            android:text="@string/pozar_otvorenog_prostora"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_pozar_objekta"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_pozar_vozila"
+            android:text="@string/pozar_vozila"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_pozar_otvorenog_prostora"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_pozar_eksplozija"
+            android:text="@string/eksplozija"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_pozar_vozila"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_pozar_ozlijedeni"
+            android:text="@string/ozlijedeni"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_pozar_eksplozija"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_koliko_ozlijedenih_pozar"
+            android:hint="@string/koliko_ozlijedenih"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignBaseline="@+id/checkbox_pozar_ozlijedeni"
+            android:layout_toRightOf="@+id/checkbox_pozar_ozlijedeni"
+            android:layout_toEndOf="@+id/checkbox_pozar_ozlijedeni"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_ubojstvo"
+            android:text="@string/ubojstvo"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_pozar_ozlijedeni"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_teroristici_napad"
+            android:text="@string/teroristicki_napad"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_ubojstvo"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_razbojstvo"
+            android:text="@string/razbojstvo"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_teroristici_napad"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_razbojstvo_osobe"
+            android:text="@string/razbojstvo_osobe"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_razbojstvo"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_razbojstvo_objekta"
+            android:text="@string/razbojstvo_objekta"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_razbojstvo_osobe"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_razbojstvo_vozila"
+            android:text="@string/razbojstvo_vozila"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_razbojstvo_objekta"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_razbojstvo_ozlijedeni"
+            android:text="@string/ozlijedeni"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_razbojstvo_vozila"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_razbojstvo_ozlijedeni"
+            android:hint="@string/koliko_ozlijedenih"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignBaseline="@+id/checkbox_razbojstvo_ozlijedeni"
+            android:layout_toRightOf="@+id/checkbox_razbojstvo_ozlijedeni"
+            android:layout_toEndOf="@+id/checkbox_razbojstvo_ozlijedeni"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_osobi_je_pozlilo"
+            android:text="@string/osobi_je_pozlilo"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_razbojstvo_ozlijedeni"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_osobi_je_pozlilo_malo"
+            android:text="@string/malo"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_osobi_je_pozlilo"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_osobi_je_pozlilo_srednje"
+            android:text="@string/srednje"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_osobi_je_pozlilo_malo"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_osobi_je_pozlilo_jako"
+            android:text="@string/jako"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_osobi_je_pozlilo_srednje"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_osobi_je_pozlilo_bez_svijesti"
+            android:text="@string/osoba_je_bez_svijesti"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_osobi_je_pozlilo_jako"
+            android:layout_alignLeft="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:layout_alignStart="@+id/checkbox_prometna_nesreca_zapaljenje"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_drugo"
+            android:text="@string/drugo"
+            android:textSize="22sp"
+            android:layout_below="@+id/checkbox_osobi_je_pozlilo_bez_svijesti"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_drugo"
+            android:hint="@string/drugo_opis"
+            android:inputType="textMultiLine"
+            android:textSize="18sp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_below="@id/checkbox_drugo"
+            android:enabled="false"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/btn_snimi_foto"
+            android:textSize="22sp"
+            android:text="@string/snimi_foto"
+            android:layout_below="@+id/edittext_drugo"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"/>
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_anonimno_slanje"
+            android:text="@string/anonimno"
+            android:textSize="22sp"
+            android:layout_below="@+id/btn_snimi_foto"
+            android:layout_marginTop="30dp"
+           />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/btn_posalji"
+            android:textSize="22sp"
+            android:text="@string/posalji_info"
+            android:layout_below="@id/checkbox_anonimno_slanje"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/btn_odustani"
+            android:textSize="22sp"
+            android:text="@string/odustani"
+            android:layout_below="@id/btn_posalji"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:onClick="odustani"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="projektutelematici.projekt112.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext_unosAdrese"
+                android:textSize="25sp"
+                android:layout_marginBottom="15dp"
+                android:hint="@string/unos_adrese_servera"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_upute"
+                android:text="@string/upute_main"
+                android:textSize="25sp"
+                android:layout_marginBottom="15dp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn_poziv_opasnost"
+                android:text="@string/poziv_opasnost"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:onClick="korisnikOpasnost"
+                android:layout_marginBottom="15dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn_poziv_112"
+                android:text="@string/poziv_112"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:onClick="poziv112"
+                android:layout_marginBottom="15dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn_azuriraj_podatke"
+                android:text="@string/azuriraj_podatke"
+                android:textSize="20sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="50dp"
+                android:onClick="azuriraj_podatkeOnClick"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btnIzlaz"
+                android:text="@string/izlaz"
+                android:textSize="20sp"
+                android:onClick="izlaz"
+                android:layout_marginBottom="15dp"
+                />
+
+
+
+
+       </LinearLayout>
+
+</ScrollView>
