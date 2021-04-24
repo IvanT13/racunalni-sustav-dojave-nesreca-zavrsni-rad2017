@@ -1,6 +1,6 @@
 # racunalni-sustav-dojave-nesreca-zavrsni-rad2017
 
-## Završni rad stručnog studija Veleučilišta u Rijeci - Stručni studij Telematika
+## Završni rad stručnog studija Telematika - Veleučilišta u Rijeci
 
 ## **Tema:** Računalni sustav za dojavu nesreća
 
